@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:  url(/code.jpg);
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.header {
+    height: 1rem;
+}
+.logo {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: 6rem;
+}
+.description {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.main_title {
+    color: orangered;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.intro {
+    font-weight: 900;
+    font-size: .5rem;
+    text-transform: uppercase;
+    padding-top: 0.2rem;
+    text-align: left;
+}
+.descrip {
+    text-align: right;
+    color: #fcfafa;
+}
+/* Sign in Page styles
+*/
+
+.form_content {
+    width: 20rem;
+    height: 80vh;
+    display: flex;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(252, 81, 2, 0.2), 0 6px 20px 0 rgba(255, 60, 1, 0.19);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    color: #000000;
+}
+a{
+    text-decoration: none;
+}
+input {
+    height: 2rem;
+    width: 15rem;
+    margin-bottom: 2rem;
+    border: 2px solid rgba(241, 84, 6, 0.3);
+    border-radius: 0 1rem 1rem 1rem;
+    padding: 5px 10px;
+}
+
+input[type=button]{
+    width: 7rem;
+    background-color: orangered;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 1rem;
+    
+}
+input[type=button]:hover{
+    width: 7rem;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border: 1px solid white;
+}
+.recover{
+    display: flex;
+}
+.recover a{
+    right: 1px;
+    text-decoration: none;
+}
+input[type=checkbox]{
+    height: 15px;
+}
+legend {
+    padding-bottom: 7rem;
+    color: orangered;
+    text-shadow: 0 0 3px #fcfafa, 0 0 5px #000000;
+    font-size: 2rem;
+}
+.footer {
+    background-color: white;
+    color: black;
+}
+.footer p {
+    text-align: center;
+    padding: 5px 10px;
+}
+/* Lessons Page */
+
+.content{
+    
+    width: 95%;
+}
+.inactive {
+    display: none;
+}
+.content h2 {
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px 15px 5px;
+    color: #000000;
+}
+/* Courses */
+.courses {
+    display: flex;
+    overflow: hidden;
+}
+
+
+
+.lesson{
+    margin-top: 0.3rem;
+    background-color: #000000;
+}
+.texture h3 {
+    padding:1rem 0 1rem  0.5rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.lesson_descrip{
+
+    display: flex;
+}
+.lesson p {
+    width: 40% auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+
+}
+.display-img{
+    width: 40%;
+    padding: 0.5rem;
+
+}
+.next-lesson{
+    background-color: orangered;
+    color: #000000;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 3ms;
+    
+}
+
+.next-lesson p {
+    font-weight: 900;
+}
+
+.next-lesson:hover{
+    background-color: rgb(245, 245, 245);
+    color: orangered;
+    width: 20%;
+    cursor: pointer;
+    
+}
+
+.topic {
+    box-shadow: 1px 1px 1px #fcfafa;
+}
+/*Lesson Board */
+
+.whiteboard{
+    background-color: rgb(0, 0, 0);
+    color: #000000;
+    height: 65vh;
+    display: flex;
+}
+
+.main-board {
+    width: 60%;
+    margin: 5px 5px;
+    background-color: rgb(255, 255, 255);
+}
+.modules{
+    width: 40%;
+}
+.modules h5 {
+    color: #fcfafa;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 10px;
+}
+.lesson-title{
+    padding: 1rem;
+}
+.lesson-text {
+    padding: 1rem;
+}
+/* Switcher */
+
+.switcher {
+    display: flex;
+    justify-content: space-between;
+}
+.switcher p{
+    color: orangered;
+    font-size: 1rem;
+    font-weight: 900;
+    margin-top: 1rem;
+}
+.switcher p:hover{
+    color: rgb(247, 245, 244);
+    font-size: 1rem;
+    font-weight: 900;
+    margin-top: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.switcher p span{
+    color: orangered;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px  rgb(245, 245, 245);
+}
+@media (max-width: 760) {
+
+    .lesson_descrip{
+
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

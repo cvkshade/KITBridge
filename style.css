@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    background: url(/code.jpg);
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+
+}
+a {text-decoration: none;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 95vh;
+}
+.header {
+    height: 8rem;   
+}
+.logo {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: 4rem;
+}
+.main_title {
+    color: orangered;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.intro {
+    font-weight: 900;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-top: 0.2rem;
+    text-align: left;
+}
+.descrip {
+    text-align: right;
+}
+/* Buttons Styles*/
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+.btn {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 1rem 0;
+    width: 15rem;
+    text-align: center;
+    border: 0.1rem solid #ffffff;
+    margin: 1rem;
+    text-decoration: none;
+    color: orangered;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: orangered;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 255, 0.5);
+    transform: translateY(-0.2);
+    transition: transform 150s;
+}
+.footer {
+    background-color: white;
+    color: black;
+}
+.footer p {
+    text-align: center;
+    padding: 5px 10px;
+}
+
+/* Select Topic Page */
+
+/* Quiz Page */
+.content {
+    background-color: white;
+    width: 96vw;
+    height: 95vh;
+}
+@media (min-width: 780) AND(max-width: 1199) {
+    .btn {
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 1rem 0;
+        width: 5rem;
+        text-align: center;
+        border: 0.1rem solid #ffffff;
+        margin: 1rem;
+        text-decoration: none;
+        color: orangered;
+        background-color: aliceblue;
+        border-radius: 10px;
+    }
+}
+
