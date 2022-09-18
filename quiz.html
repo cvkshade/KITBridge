@@ -14,13 +14,27 @@
 <body>
    <div class="container">
     <div class="header">
-        <a href="index.html"><img class="logo" src="/download.png"></a>
+        <a href="index.html"><img class="logo" src="./download.png"></a>
      <a href=""><div class="description">
         <h1 class="main_title">KIT Bridge</h1>
         <p class="descrip">Questions & Answers</p>
      </div></a>
     </div>
+    
     <div class="quiz-container">
+        <div class="stats">
+            <div class="topInfo">
+                <p class="questPre">Question</p>
+                <h1 class="topMainText" id="questionNum"></h1>
+            </div>
+            <div class="topInfo">
+                <p class="questPre">Score</p>
+                <h1 class="topMainText" id="score">0</h1>
+            </div>
+        </div>
+        <div class="progressFrame">
+            <div id="progressor"></div>
+        </div>
         <h2 id="quiz">
             What is the Answer?
         </h2>
@@ -42,6 +56,6 @@
         </div>
     </div>
 </div>
-<script src="quiz.js"></script>
+<script src="./quiz.js"></script>
 </body>
 </html>

@@ -6,9 +6,8 @@
 /* Quiz Page */
 
 .quiz-container{
-    background-color: orangered;
-    width: 100vh;
-    height: 7vh;
+    
+    width: 90%;
     padding-bottom: 1rem;
     margin-top: 10rem;
     color: black;
@@ -54,4 +53,34 @@ h2 {
 }
 .incorrect {
     background-color: #ec1616;
+}
+/* Statistics */
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.topInfo {
+    padding: 0.5rem;
+}
+.questPre{
+    color: white;
+    font-weight: 900;
+}
+.topMainText{
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+}
+.progressFrame{
+    width: 100%;
+    height: 0.4rem;
+    border: 0.1rem solid orangered;
+}
+#progressor{
+    height: 0.3rem;
+    background-color: white;
+    width: 0%;
 }

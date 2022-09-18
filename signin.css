@@ -5,7 +5,7 @@
 }
 
 body {
-    background:  url(/code.jpg);
+    background:  url(./code.jpg);
     color: whitesmoke;
     font-family: 'Poppins', sans-serif;
 
@@ -17,6 +17,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
     
 }
 .header {

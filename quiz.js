@@ -1,7 +1,9 @@
 
 const quizQuest = document.getElementById('quiz');
 const choices = Array.from(document.getElementsByClassName('choice'));
-
+const questionNum = document.getElementById('questionNum');
+const mainScore = document.getElementById('score');
+const progressor = document.getElementById('progressor');
 let currentAnswer ={};
 let acceptAnswer = true;
 let score = 0;
@@ -41,13 +43,22 @@ let questions = [
         choice3: "1995",
         choice4: "2015",
         answer: 4
+    },
+
+    {
+        question: "What are the two loops in JavaScript?",
+        choice1: "For while and Rewind",
+        choice2: "If and While",
+        choice3: "Forward and Backward",
+        choice4: "Do While and For",
+        anwser: 2
     }
 ];
 
 // Scores
 
 const correct_points = 10;
-const max_questions = 4;
+const max_questions = 10;
 
 startquiz = () => {
     
@@ -63,6 +74,10 @@ getNewQuestion = () => {
         return window.location.assign("/end.html");
     }
     questionCounter++;
+    questionNum.innerText = `${questionCounter}/${max_questions}`;
+    // Increase Progress Bar
+    progressor.style.width = `${(questionCounter / max_questions) * 100}%`;
+
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     quizQuest.innerText = currentQuestion.question;
@@ -91,13 +106,26 @@ choices.forEach(choice => {
         }
 
         // const classToApply = selectedAnswer == currentAnswer.answer ? "correct" : "incorrect";
+        
+        
+        // Score Incrementor
+
+        if(classToApply === 'correct'){
+            increaseScore(correct_points);
+        }
         selectedChoice.parentElement.classList.add(classToApply);
+        mainScore.classList.add(classToApply);
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
+            mainScore.classList.remove(classToApply);
             getNewQuestion();
         }, 1000);
         console.log(classToApply);
 
     });
 });
+increaseScore = num => {
+    score +=num;
+    mainScore.innerText = score;
+}
 startquiz();
